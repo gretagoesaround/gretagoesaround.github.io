@@ -6,8 +6,10 @@
     <meta name="description" content="Guide semplici, pratiche, talvolta inutili per chi non ha nemmeno voglia di stare a consultare ChatGPT.">
     <title>@gretagoesaround — Guide di viaggio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+
         :root {
             --ink: #35271f;
             --accent: #d97838;
@@ -16,6 +18,7 @@
             --footer: #c7a58d;
             --background: #fff9f4;
         }
+
         body {
             font-family: 'Montserrat', sans-serif;
             background: var(--background);
@@ -26,7 +29,13 @@
             min-height: 100vh;
             padding: 40px 20px;
         }
-        .container { max-width: 800px; width: 100%; text-align: center; }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
         .photo {
             width: 190px;
             height: 190px;
@@ -37,6 +46,7 @@
             display: block;
             margin: 0 auto 35px;
         }
+
         .line, .line-bottom {
             width: 90px;
             height: 3px;
@@ -45,13 +55,16 @@
             margin-right: auto;
             border-radius: 3px;
         }
+
         .line { margin-bottom: 35px; }
+
         h1 {
             font-size: 58px;
             font-weight: 300;
             letter-spacing: 2px;
             color: var(--ink);
         }
+
         h2 {
             margin-top: 34px;
             font-size: 21px;
@@ -60,6 +73,7 @@
             letter-spacing: 5px;
             text-transform: uppercase;
         }
+
         .tagline {
             margin: 35px auto;
             max-width: 650px;
@@ -68,13 +82,19 @@
             font-style: italic;
             line-height: 1.6;
         }
-        .line-bottom { margin-top: 35px; margin-bottom: 45px; }
+
+        .line-bottom {
+            margin-top: 35px;
+            margin-bottom: 45px;
+        }
+
         .buttons {
             display: flex;
             justify-content: center;
             gap: 18px;
             flex-wrap: wrap;
         }
+
         .button {
             background: var(--accent);
             color: white;
@@ -88,35 +108,127 @@
             display: inline-block;
             min-width: 180px;
         }
-        .button:hover { background: var(--accent-hover); transform: translateY(-2px); }
-        .button:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+
+        .button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .button:focus-visible {
+            outline: 3px solid var(--ink);
+            outline-offset: 4px;
+        }
+
         footer {
             margin-top: 60px;
             color: var(--footer);
             font-size: 14px;
             letter-spacing: 1px;
         }
+
+        /* Pulsante fisso: versione professionale */
+
+        .reality-button {
+            position: fixed;
+            right: 24px;
+            bottom: 24px;
+            z-index: 1000;
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 14px 21px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: .3px;
+            box-shadow: 0 4px 14px rgba(53, 39, 31, .18);
+            transition: all .25s ease;
+        }
+
+        .reality-button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 18px rgba(53, 39, 31, .23);
+        }
+
+        .reality-button:focus-visible {
+            outline: 3px solid var(--ink);
+            outline-offset: 4px;
+        }
+
+        .reality-arrow {
+            font-size: 16px;
+            line-height: 1;
+        }
+
         @media (max-width: 768px) {
-            .photo { width: 150px; height: 150px; }
+            .photo {
+                width: 150px;
+                height: 150px;
+            }
+
             h1 { font-size: 38px; }
-            h2 { font-size: 16px; letter-spacing: 3px; }
+
+            h2 {
+                font-size: 16px;
+                letter-spacing: 3px;
+            }
+
             .tagline { font-size: 18px; }
-            .buttons { flex-direction: column; align-items: center; }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
             .button { width: 220px; }
+
+            .reality-button {
+                right: 14px;
+                bottom: 14px;
+                padding: 12px 16px;
+                font-size: 11px;
+            }
         }
     </style>
 </head>
+
 <body>
+
     <main class="container">
         <img src="foto.jpg" alt="Foto di Greta" class="photo">
+
         <div class="line"></div>
+
         <h1>@gretagoesaround</h1>
+
         <h2>guide semplici, pratiche, talvolta inutili per chi non ha nemmeno voglia di stare a consultare ChatGPT</h2>
+
         <div class="line-bottom"></div>
+
         <div class="buttons">
-            <a class="button" href="cracovia.pdf" target="_blank" rel="noopener noreferrer">2 GIORNI A CRACOVIA</a>
+            <a class="button" href="cracovia.pdf" target="_blank" rel="noopener noreferrer">
+                2 GIORNI A CRACOVIA
+            </a>
         </div>
+
         <footer>@GRETAGOESAROUND</footer>
     </main>
+
+    <!-- Collegamento al profilo professionale -->
+    <a
+        class="reality-button"
+        href="https://gretap1997.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Quando torno alla realtà: visita il mio profilo professionale"
+    >
+        Quando torno alla realtà
+        <span class="reality-arrow">↗</span>
+    </a>
+
 </body>
 </html>
